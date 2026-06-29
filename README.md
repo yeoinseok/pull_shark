@@ -1,6 +1,3 @@
-# Pull_Shark
-asdsd
-asadsad
 # 실시간 지문자 수어 번역기
 
 > Jetson Nano 환경에서 동작하는 실시간 한글 지문자 인식 및 번역 시스템
@@ -17,9 +14,37 @@ asadsad
 
 카메라로 입력된 손 이미지를 전처리한 뒤, MobileNetV2 기반 분류 모델을 통해 한글 지문자 31개 클래스를 예측합니다. 학습된 Keras 모델은 ONNX로 변환하고, Jetson Nano에서 TensorRT 엔진으로 최적화하여 실시간 추론이 가능하도록 구성했습니다.
 
-## Demo
+## YouTube Demo
 
-[![Demo Video](https://img.youtube.com/vi/wPea2OLFxoQ/0.jpg)](https://youtu.be/wPea2OLFxoQ)
+아래 이미지를 클릭하면 YouTube 데모 영상으로 이동합니다.
+
+<a href="https://youtu.be/wPea2OLFxoQ">
+  <img src="https://img.shields.io/badge/YouTube-Demo%20Video-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube Demo">
+</a>
+
+<br><br>
+
+<a href="https://youtu.be/wPea2OLFxoQ">
+  <img src="https://img.youtube.com/vi/wPea2OLFxoQ/maxresdefault.jpg" width="720" alt="YouTube Demo Video Thumbnail">
+</a>
+
+[YouTube 데모 영상 바로가기](https://youtu.be/wPea2OLFxoQ)
+
+## Preview
+
+### 실시간 인식 UI
+
+<img src="./assets/demo_ui.png" width="720" alt="Real-time fingerspelling recognition UI">
+
+### 프로젝트 구성 이미지
+
+| Model Architecture | ONNX & TensorRT |
+|---|---|
+| <img src="./assets/model_architecture.png" width="360" alt="Model Architecture"> | <img src="./assets/onnx_flow.png" width="360" alt="ONNX Flow"> |
+
+| Preprocessing | UI Design |
+|---|---|
+| <img src="./assets/preprocessing.png" width="360" alt="Preprocessing"> | <img src="./assets/ui_design.png" width="360" alt="UI Design"> |
 
 ## 주요 기능
 
@@ -210,3 +235,7 @@ UI는 웹 브라우저에서 접속할 수 있도록 구성했으며, 다음 기
 이번 프로젝트를 통해 모델 구조만큼이나 데이터 품질과 전처리 방식이 성능에 큰 영향을 준다는 점을 체감했습니다. 같은 지문자라도 사람마다 손 크기, 손 모양, 각도, 조명, 카메라 위치가 달라지기 때문에 안정적인 모델을 만들기 위해서는 다양한 조건의 데이터가 필요했습니다.
 
 또한 수어는 단순한 손동작이 아니라 청각장애인에게 중요한 의사소통 수단이라는 점을 다시 생각하게 되었습니다. 기술적으로 정확도를 높이는 것도 중요하지만, 실제 사용자가 더 편하게 소통할 수 있도록 돕는 방향으로 개발하는 것이 중요하다고 느꼈습니다.
+
+## Thanks
+
+<img src="./assets/thanks.gif" width="480" alt="감사합니다">
